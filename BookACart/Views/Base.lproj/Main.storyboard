@@ -1,0 +1,1781 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="APE-aK-yb8">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="GEDinkum-Bold-1.ttf">
+            <string>GEDinkum-Bold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Book_a_cart" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YEb-c8-WuO">
+                                <rect key="frame" x="0.0" y="423" width="375" height="124"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WFn-li-S3o">
+                                        <rect key="frame" x="40" y="0.0" width="295" height="32"/>
+                                        <color key="backgroundColor" name="AppColor"/>
+                                        <fontDescription key="fontDescription" name="GEDinkum-Bold" family="GE Dinkum" pointSize="17"/>
+                                        <state key="normal" title="صاحب متجر">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <integer key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <segue destination="Uqu-Ty-ace" kind="show" id="qwj-pI-QPq"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jFW-te-g5v">
+                                        <rect key="frame" x="40" y="72" width="295" height="32"/>
+                                        <color key="backgroundColor" name="AppColor"/>
+                                        <fontDescription key="fontDescription" name="GEDinkum-Bold" family="GE Dinkum" pointSize="17"/>
+                                        <state key="normal" title="متسوق">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <integer key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <segue destination="fJ8-N6-8zS" kind="show" id="dgL-pp-sfn"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="WFn-li-S3o" firstAttribute="top" secondItem="YEb-c8-WuO" secondAttribute="top" id="Aqt-K5-qcS"/>
+                                    <constraint firstAttribute="trailing" secondItem="jFW-te-g5v" secondAttribute="trailing" constant="40" id="CEj-xc-6Sh"/>
+                                    <constraint firstItem="WFn-li-S3o" firstAttribute="leading" secondItem="YEb-c8-WuO" secondAttribute="leading" constant="40" id="DJA-zA-J5e"/>
+                                    <constraint firstItem="jFW-te-g5v" firstAttribute="top" secondItem="WFn-li-S3o" secondAttribute="bottom" constant="40" id="ODd-K3-8K6"/>
+                                    <constraint firstItem="jFW-te-g5v" firstAttribute="leading" secondItem="YEb-c8-WuO" secondAttribute="leading" constant="40" id="q9n-VO-95K"/>
+                                    <constraint firstAttribute="trailing" secondItem="WFn-li-S3o" secondAttribute="trailing" constant="40" id="wsj-tV-ouc"/>
+                                    <constraint firstAttribute="bottom" secondItem="jFW-te-g5v" secondAttribute="bottom" constant="20" id="xRL-G4-Gqu"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HJX-Ey-bx7">
+                                <rect key="frame" x="0.0" y="-65" width="375" height="368"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mail 4" translatesAutoresizingMaskIntoConstraints="NO" id="Izu-yS-Es5">
+                                        <rect key="frame" x="62.5" y="106" width="250" height="250"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="250" id="Qfw-ez-Ng1"/>
+                                            <constraint firstAttribute="width" constant="250" id="xpJ-1p-crw"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f95-2C-W5T">
+                                        <rect key="frame" x="20" y="345" width="335" height="41.5"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="حمايتك">
+                                                <attributes>
+                                                    <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" metaFont="system" size="17"/>
+                                                    <real key="NSKern" value="0.0"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="17" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                    <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <real key="NSStrokeWidth" value="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content=" ">
+                                                <attributes>
+                                                    <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" size="17" name="Galvji"/>
+                                                    <real key="NSKern" value="0.0"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="17" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                    <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <real key="NSStrokeWidth" value="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="أولويتنا">
+                                                <attributes>
+                                                    <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" metaFont="system" size="17"/>
+                                                    <real key="NSKern" value="0.0"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="17" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                    <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <real key="NSStrokeWidth" value="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment>
+                                                <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                                <attributes>
+                                                    <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" size="17" name="Galvji"/>
+                                                    <real key="NSKern" value="0.0"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="17" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                    <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <real key="NSStrokeWidth" value="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="احجز">
+                                                <attributes>
+                                                    <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" metaFont="system" size="17"/>
+                                                    <real key="NSKern" value="0.0"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="17" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                    <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <real key="NSStrokeWidth" value="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content=" ">
+                                                <attributes>
+                                                    <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" size="17" name="Galvji"/>
+                                                    <real key="NSKern" value="0.0"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="17" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                    <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <real key="NSStrokeWidth" value="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="موعد">
+                                                <attributes>
+                                                    <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" metaFont="system" size="17"/>
+                                                    <real key="NSKern" value="0.0"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="17" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                    <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <real key="NSStrokeWidth" value="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content=" ">
+                                                <attributes>
+                                                    <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" size="17" name="Galvji"/>
+                                                    <real key="NSKern" value="0.0"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="17" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                    <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <real key="NSStrokeWidth" value="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="تسوقك">
+                                                <attributes>
+                                                    <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" metaFont="system" size="17"/>
+                                                    <real key="NSKern" value="0.0"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="17" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                    <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <real key="NSStrokeWidth" value="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content=" ">
+                                                <attributes>
+                                                    <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" size="17" name="Galvji"/>
+                                                    <real key="NSKern" value="0.0"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="17" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                    <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <real key="NSStrokeWidth" value="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="بدون">
+                                                <attributes>
+                                                    <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" metaFont="system" size="17"/>
+                                                    <real key="NSKern" value="0.0"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="17" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                    <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <real key="NSStrokeWidth" value="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content=" ">
+                                                <attributes>
+                                                    <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" size="17" name="Galvji"/>
+                                                    <real key="NSKern" value="0.0"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="17" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                    <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <real key="NSStrokeWidth" value="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="انتظار">
+                                                <attributes>
+                                                    <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" metaFont="system" size="17"/>
+                                                    <real key="NSKern" value="0.0"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="17" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                    <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <real key="NSStrokeWidth" value="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content=" ">
+                                                <attributes>
+                                                    <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" size="17" name="Galvji"/>
+                                                    <real key="NSKern" value="0.0"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="17" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                    <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <real key="NSStrokeWidth" value="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" name="AppColor"/>
+                                <constraints>
+                                    <constraint firstItem="f95-2C-W5T" firstAttribute="leading" secondItem="HJX-Ey-bx7" secondAttribute="leading" constant="20" id="2cl-So-gOs"/>
+                                    <constraint firstItem="Izu-yS-Es5" firstAttribute="centerX" secondItem="HJX-Ey-bx7" secondAttribute="centerX" id="8LA-Ja-znL"/>
+                                    <constraint firstAttribute="trailing" secondItem="f95-2C-W5T" secondAttribute="trailing" constant="20" id="947-8N-TyQ"/>
+                                    <constraint firstItem="Izu-yS-Es5" firstAttribute="centerY" secondItem="HJX-Ey-bx7" secondAttribute="centerY" constant="47.000000000000028" id="EgD-Wr-yIw"/>
+                                    <constraint firstItem="f95-2C-W5T" firstAttribute="top" secondItem="Izu-yS-Es5" secondAttribute="bottom" constant="-11" id="ofQ-rm-lAn"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="YEb-c8-WuO" firstAttribute="top" secondItem="HJX-Ey-bx7" secondAttribute="bottom" constant="120" id="8HN-Dh-oUE"/>
+                            <constraint firstAttribute="trailing" secondItem="HJX-Ey-bx7" secondAttribute="trailing" id="QzQ-hu-fkO"/>
+                            <constraint firstItem="HJX-Ey-bx7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="TPy-eg-4md"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="YEb-c8-WuO" secondAttribute="trailing" id="X4y-ep-IJ3"/>
+                            <constraint firstItem="YEb-c8-WuO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="jvZ-94-CT5"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="YEb-c8-WuO" secondAttribute="bottom" constant="120" id="ktu-ng-mUl"/>
+                            <constraint firstItem="HJX-Ey-bx7" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="-65" id="x04-hs-vpc"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="UhU-1w-Eo7"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1044.9275362318842" y="132.88043478260872"/>
+        </scene>
+        <!--Customer Resistor View Controller-->
+        <scene sceneID="eOD-Aw-oh8">
+            <objects>
+                <viewController storyboardIdentifier="CustomerResistorViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="fJ8-N6-8zS" customClass="CustomerResistorViewController" customModule="Book_a_cart" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wug-fX-E2p">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G9U-IC-ejy">
+                                <rect key="frame" x="0.0" y="302.5" width="375" height="146"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="الاسم" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DEi-oO-1kh" customClass="SkyFloatingLabelTextField" customModule="Book_a_cart" customModuleProvider="target">
+                                        <rect key="frame" x="40" y="20" width="295" height="22"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="GEDinkum-Bold" family="GE Dinkum" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                                <color key="value" name="AppColor"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="titleColor">
+                                                <color key="value" red="0.59215686270000001" green="0.59215686270000001" blue="0.59215686270000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="selectedTitleColor">
+                                                <color key="value" name="AppColor"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="selectedLineColor">
+                                                <color key="value" name="AppColor"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="البريد الالكتروني" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JAQ-5y-fuU" customClass="SkyFloatingLabelTextField" customModule="Book_a_cart" customModuleProvider="target">
+                                        <rect key="frame" x="40" y="104" width="295" height="22"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="GEDinkum-Bold" family="GE Dinkum" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                                <color key="value" name="AppColor"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="titleColor">
+                                                <color key="value" red="0.59215686270000001" green="0.59215686270000001" blue="0.59215686270000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="selectedTitleColor">
+                                                <color key="value" name="AppColor"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="selectedLineColor">
+                                                <color key="value" name="AppColor"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="رقم الجوال" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZCX-ab-FoP" customClass="SkyFloatingLabelTextField" customModule="Book_a_cart" customModuleProvider="target">
+                                        <rect key="frame" x="40" y="62" width="295" height="22"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="GEDinkum-Bold" family="GE Dinkum" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                                <color key="value" name="AppColor"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="titleColor">
+                                                <color key="value" red="0.59215686270000001" green="0.59215686270000001" blue="0.59215686270000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="selectedTitleColor">
+                                                <color key="value" name="AppColor"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="selectedLineColor">
+                                                <color key="value" name="AppColor"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="ZCX-ab-FoP" firstAttribute="leading" secondItem="G9U-IC-ejy" secondAttribute="leading" constant="40" id="2K7-gH-pgZ"/>
+                                    <constraint firstAttribute="bottom" secondItem="JAQ-5y-fuU" secondAttribute="bottom" constant="20" id="Alj-nl-Bxa"/>
+                                    <constraint firstAttribute="trailing" secondItem="DEi-oO-1kh" secondAttribute="trailing" constant="40" id="BCs-ed-aHV"/>
+                                    <constraint firstItem="DEi-oO-1kh" firstAttribute="leading" secondItem="G9U-IC-ejy" secondAttribute="leading" constant="40" id="PSd-eQ-0aY"/>
+                                    <constraint firstItem="ZCX-ab-FoP" firstAttribute="top" secondItem="DEi-oO-1kh" secondAttribute="bottom" constant="20" id="Xdj-1p-nF0"/>
+                                    <constraint firstAttribute="trailing" secondItem="JAQ-5y-fuU" secondAttribute="trailing" constant="40" id="Xet-bb-EAA"/>
+                                    <constraint firstAttribute="trailing" secondItem="ZCX-ab-FoP" secondAttribute="trailing" constant="40" id="ggj-xV-pIu"/>
+                                    <constraint firstItem="DEi-oO-1kh" firstAttribute="top" secondItem="G9U-IC-ejy" secondAttribute="top" constant="20" id="i55-mw-DdY"/>
+                                    <constraint firstItem="JAQ-5y-fuU" firstAttribute="leading" secondItem="G9U-IC-ejy" secondAttribute="leading" constant="40" id="p0i-xv-OAt"/>
+                                    <constraint firstItem="JAQ-5y-fuU" firstAttribute="top" secondItem="ZCX-ab-FoP" secondAttribute="bottom" constant="20" id="uWh-s7-fcs"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aHA-y0-BYr">
+                                <rect key="frame" x="40" y="507.5" width="100" height="40"/>
+                                <color key="backgroundColor" name="AppColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="2yp-cf-wip"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="kBa-wM-s7J"/>
+                                </constraints>
+                                <state key="normal" title="تسجيل" image="reg-20">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="Tze-g6-Ikh" kind="show" id="FwM-9O-sJ1"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5mu-vw-SBh">
+                                <rect key="frame" x="0.0" y="-70" width="375" height="332.5"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mail 4" translatesAutoresizingMaskIntoConstraints="NO" id="HtR-NV-x3I">
+                                        <rect key="frame" x="62.5" y="88.5" width="250" height="250"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="250" id="HRg-tk-wJB"/>
+                                            <constraint firstAttribute="width" constant="250" id="cJs-1C-5gy"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" name="AppColor"/>
+                                <constraints>
+                                    <constraint firstItem="HtR-NV-x3I" firstAttribute="centerX" secondItem="5mu-vw-SBh" secondAttribute="centerX" id="S8k-aV-Xx1"/>
+                                    <constraint firstItem="HtR-NV-x3I" firstAttribute="centerY" secondItem="5mu-vw-SBh" secondAttribute="centerY" constant="47.000000000000028" id="o6L-9O-0Rb"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="aHA-y0-BYr" firstAttribute="top" secondItem="G9U-IC-ejy" secondAttribute="bottom" constant="58.999999999999829" id="2TT-f1-aoh"/>
+                            <constraint firstItem="zMN-xO-q08" firstAttribute="trailing" secondItem="G9U-IC-ejy" secondAttribute="trailing" id="3jH-ih-Ekd"/>
+                            <constraint firstItem="5mu-vw-SBh" firstAttribute="top" secondItem="zMN-xO-q08" secondAttribute="top" constant="-114" id="5FG-fk-kot"/>
+                            <constraint firstItem="5mu-vw-SBh" firstAttribute="leading" secondItem="zMN-xO-q08" secondAttribute="leading" id="896-Sd-hbq"/>
+                            <constraint firstItem="aHA-y0-BYr" firstAttribute="leading" secondItem="wug-fX-E2p" secondAttribute="leading" constant="40" id="EpN-sQ-VJn"/>
+                            <constraint firstItem="G9U-IC-ejy" firstAttribute="leading" secondItem="zMN-xO-q08" secondAttribute="leading" id="VwJ-Kb-ts2"/>
+                            <constraint firstItem="G9U-IC-ejy" firstAttribute="top" secondItem="5mu-vw-SBh" secondAttribute="bottom" constant="40" id="WRE-5W-hIQ"/>
+                            <constraint firstItem="G9U-IC-ejy" firstAttribute="centerY" secondItem="wug-fX-E2p" secondAttribute="centerY" constant="42.166666666666742" id="qq1-U9-8Q5"/>
+                            <constraint firstItem="zMN-xO-q08" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="aHA-y0-BYr" secondAttribute="trailing" symbolic="YES" id="uBm-kv-j1K"/>
+                            <constraint firstItem="zMN-xO-q08" firstAttribute="trailing" secondItem="5mu-vw-SBh" secondAttribute="trailing" id="z6i-lM-guR"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="zMN-xO-q08"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="xmo-Of-vYD"/>
+                    <connections>
+                        <outlet property="emailAddress" destination="JAQ-5y-fuU" id="JZl-Lp-7Zy"/>
+                        <outlet property="phoneNumber" destination="ZCX-ab-FoP" id="Tit-xQ-4BM"/>
+                        <outlet property="userName" destination="DEi-oO-1kh" id="o3F-Pw-Kym"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="N1f-D4-1xR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1440.5797101449277" y="883.69565217391312"/>
+        </scene>
+        <!--Store Resistor View Controller-->
+        <scene sceneID="7ia-Ts-SPk">
+            <objects>
+                <viewController storyboardIdentifier="StoreResistorViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Uqu-Ty-ace" customClass="StoreResistorViewController" customModule="Book_a_cart" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eff-Ce-FZG">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Acb-bo-inF">
+                                <rect key="frame" x="0.0" y="-34" width="375" height="366.5"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mail 4" translatesAutoresizingMaskIntoConstraints="NO" id="qVY-fU-vm3">
+                                        <rect key="frame" x="62.5" y="105.5" width="250" height="250"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="250" id="o7M-3p-Vsc"/>
+                                            <constraint firstAttribute="height" constant="250" id="wbM-Xo-hpG"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" name="AppColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="qVY-fU-vm3" secondAttribute="bottom" constant="11.333333333333314" id="DLH-Hw-Lsy"/>
+                                    <constraint firstItem="qVY-fU-vm3" firstAttribute="centerY" secondItem="Acb-bo-inF" secondAttribute="centerY" constant="47.000000000000028" id="gFl-7k-WiF"/>
+                                    <constraint firstItem="qVY-fU-vm3" firstAttribute="centerX" secondItem="Acb-bo-inF" secondAttribute="centerX" id="joM-CG-bce"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QaE-9F-HAI">
+                                <rect key="frame" x="0.0" y="372.5" width="375" height="230"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="253" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="اسم المتجر" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ung-rs-krj" customClass="SkyFloatingLabelTextField" customModule="Book_a_cart" customModuleProvider="target">
+                                        <rect key="frame" x="40" y="20" width="295" height="22"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="GEDinkum-Bold" family="GE Dinkum" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="اسم المتجر"/>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="titleColor">
+                                                <color key="value" red="0.59215686270000001" green="0.59215686270000001" blue="0.59215686270000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                                <color key="value" name="AppColor"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="selectedTitleColor">
+                                                <color key="value" name="AppColor"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="selectedLineColor">
+                                                <color key="value" name="AppColor"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="252" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="مساحة المتجر" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kJX-g8-A7X" customClass="SkyFloatingLabelTextField" customModule="Book_a_cart" customModuleProvider="target">
+                                        <rect key="frame" x="40" y="104" width="295" height="22"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="GEDinkum-Bold" family="GE Dinkum" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="مساحة المتجر"/>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="selectedLineColor">
+                                                <color key="value" name="AppColor"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="selectedTitleColor">
+                                                <color key="value" name="AppColor"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                                <color key="value" name="AppColor"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="titleColor">
+                                                <color key="value" red="0.59215686270000001" green="0.59215686270000001" blue="0.59215686270000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="253" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="الموقع" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wxI-t6-QQb" customClass="SkyFloatingLabelTextField" customModule="Book_a_cart" customModuleProvider="target">
+                                        <rect key="frame" x="40" y="62" width="295" height="22"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="GEDinkum-Bold" family="GE Dinkum" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="الموقع"/>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="titleColor">
+                                                <color key="value" red="0.59215686270000001" green="0.59215686270000001" blue="0.59215686270000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="selectedTitleColor">
+                                                <color key="value" name="AppColor"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="selectedLineColor">
+                                                <color key="value" name="AppColor"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                                <color key="value" name="AppColor"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="الزمن المقدر للعميل في المتجر" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CUO-Hb-oZj" customClass="SkyFloatingLabelTextField" customModule="Book_a_cart" customModuleProvider="target">
+                                        <rect key="frame" x="40" y="146" width="295" height="22"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="GEDinkum-Bold" family="GE Dinkum" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="selectedLineColor">
+                                                <color key="value" name="AppColor"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="selectedTitleColor">
+                                                <color key="value" name="AppColor"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                                <color key="value" name="AppColor"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="titleColor">
+                                                <color key="value" red="0.59215686270000001" green="0.59215686270000001" blue="0.59215686270000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="العدد المسموح بناء على الزمن" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yE8-NW-7Vk" customClass="SkyFloatingLabelTextField" customModule="Book_a_cart" customModuleProvider="target">
+                                        <rect key="frame" x="40" y="188" width="295" height="22"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="GEDinkum-Bold" family="GE Dinkum" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="selectedLineColor">
+                                                <color key="value" name="AppColor"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="selectedTitleColor">
+                                                <color key="value" name="AppColor"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                                <color key="value" name="AppColor"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="titleColor">
+                                                <color key="value" red="0.59215686270000001" green="0.59215686270000001" blue="0.59215686270000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="yE8-NW-7Vk" firstAttribute="leading" secondItem="QaE-9F-HAI" secondAttribute="leading" constant="40" id="0Ad-7S-s9z"/>
+                                    <constraint firstItem="yE8-NW-7Vk" firstAttribute="top" secondItem="CUO-Hb-oZj" secondAttribute="bottom" constant="20" id="1ju-hV-nuD"/>
+                                    <constraint firstItem="kJX-g8-A7X" firstAttribute="top" secondItem="wxI-t6-QQb" secondAttribute="bottom" constant="20" id="4Ew-I7-LA5"/>
+                                    <constraint firstAttribute="trailing" secondItem="CUO-Hb-oZj" secondAttribute="trailing" constant="40" id="57u-Af-jvc"/>
+                                    <constraint firstItem="kJX-g8-A7X" firstAttribute="leading" secondItem="QaE-9F-HAI" secondAttribute="leading" constant="40" id="Bo0-GV-inq"/>
+                                    <constraint firstAttribute="trailing" secondItem="ung-rs-krj" secondAttribute="trailing" constant="40" id="EoK-hx-01u"/>
+                                    <constraint firstAttribute="bottom" secondItem="yE8-NW-7Vk" secondAttribute="bottom" constant="20" id="FLg-Np-0bM"/>
+                                    <constraint firstItem="CUO-Hb-oZj" firstAttribute="top" secondItem="kJX-g8-A7X" secondAttribute="bottom" constant="20" id="Hdc-NQ-qgr"/>
+                                    <constraint firstItem="ung-rs-krj" firstAttribute="top" secondItem="QaE-9F-HAI" secondAttribute="top" constant="20" id="MmT-dF-49R"/>
+                                    <constraint firstAttribute="trailing" secondItem="yE8-NW-7Vk" secondAttribute="trailing" constant="40" id="WFH-7f-yM2"/>
+                                    <constraint firstAttribute="trailing" secondItem="kJX-g8-A7X" secondAttribute="trailing" constant="40" id="WMu-LL-f1p"/>
+                                    <constraint firstItem="wxI-t6-QQb" firstAttribute="leading" secondItem="QaE-9F-HAI" secondAttribute="leading" constant="40" id="Wne-3h-BIl"/>
+                                    <constraint firstAttribute="trailing" secondItem="wxI-t6-QQb" secondAttribute="trailing" constant="40" id="cST-1h-2sm"/>
+                                    <constraint firstItem="wxI-t6-QQb" firstAttribute="top" secondItem="ung-rs-krj" secondAttribute="bottom" constant="20" id="dhN-We-RmW"/>
+                                    <constraint firstItem="CUO-Hb-oZj" firstAttribute="leading" secondItem="QaE-9F-HAI" secondAttribute="leading" constant="40" id="ehn-zA-3OH"/>
+                                    <constraint firstItem="ung-rs-krj" firstAttribute="leading" secondItem="QaE-9F-HAI" secondAttribute="leading" constant="40" id="jpQ-uc-guq"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mm4-li-vdC">
+                                <rect key="frame" x="40" y="596" width="100" height="40"/>
+                                <color key="backgroundColor" name="AppColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="J3E-QG-Wnm"/>
+                                    <constraint firstAttribute="height" constant="40" id="jss-mN-bGJ"/>
+                                </constraints>
+                                <state key="normal" title="تسجيل" image="reg-20">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="vf1-hq-5tw" kind="show" id="jFb-Js-8s7"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="QaE-9F-HAI" firstAttribute="top" secondItem="Acb-bo-inF" secondAttribute="bottom" constant="40" id="1Gi-FK-e0p"/>
+                            <constraint firstItem="QaE-9F-HAI" firstAttribute="leading" secondItem="bs4-Zu-wfi" secondAttribute="leading" id="3Rg-MX-kh8"/>
+                            <constraint firstAttribute="trailing" secondItem="Acb-bo-inF" secondAttribute="trailing" id="A5G-lL-9Kw"/>
+                            <constraint firstItem="Acb-bo-inF" firstAttribute="top" secondItem="eff-Ce-FZG" secondAttribute="top" constant="-34" id="Hdw-go-Z9w"/>
+                            <constraint firstItem="bs4-Zu-wfi" firstAttribute="bottom" secondItem="mm4-li-vdC" secondAttribute="bottom" constant="31" id="a4g-hN-uH9"/>
+                            <constraint firstItem="Acb-bo-inF" firstAttribute="leading" secondItem="bs4-Zu-wfi" secondAttribute="leading" id="feE-sl-tuP"/>
+                            <constraint firstItem="bs4-Zu-wfi" firstAttribute="trailing" secondItem="QaE-9F-HAI" secondAttribute="trailing" id="gIF-s7-lUL"/>
+                            <constraint firstItem="mm4-li-vdC" firstAttribute="leading" secondItem="bs4-Zu-wfi" secondAttribute="leading" constant="40" id="qH1-SZ-Oyw"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="bs4-Zu-wfi"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ee6-ui-mPc"/>
+                    <connections>
+                        <outlet property="allowNumberOfCustomer" destination="yE8-NW-7Vk" id="NNR-7S-ZTj"/>
+                        <outlet property="customerTimeEstimateInStore" destination="CUO-Hb-oZj" id="I2N-n9-p40"/>
+                        <outlet property="storeLocation" destination="wxI-t6-QQb" id="0jH-8J-9M5"/>
+                        <outlet property="storeName" destination="ung-rs-krj" id="gY1-bG-hZB"/>
+                        <outlet property="storeSpace" destination="kJX-g8-A7X" id="JZM-KW-8lU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ut1-kE-lVO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="718.84057971014499" y="883.69565217391312"/>
+        </scene>
+        <!--الارشيف-->
+        <scene sceneID="9gb-yk-hyK">
+            <objects>
+                <viewController id="139-QN-N6w" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1Nv-jo-kTw">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="s24-46-8wX"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="الارشيف" image="tray.fill" catalog="system" id="Dgj-i3-M6w"/>
+                    <navigationItem key="navigationItem" id="zJx-bo-tSO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mdj-9x-zXZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1670" y="3046"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="3Bc-5B-Wkg">
+            <objects>
+                <viewController id="v8S-ra-SCg" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WRS-jR-lVZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="2jl-6u-feW"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="c35-dz-XZ1"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="J4x-Fj-JuX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1532" y="1657"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="ily-He-AVh">
+            <objects>
+                <viewController storyboardIdentifier="StoreManagementSettingViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="vf1-hq-5tw" customClass="StoreManagementSettingViewController" customModule="Book_a_cart" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="XZj-nM-V7S">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kro-MO-RL2">
+                                <rect key="frame" x="0.0" y="376.5" width="375" height="225"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4ha-37-reg">
+                                        <rect key="frame" x="40" y="0.0" width="295" height="35"/>
+                                        <color key="backgroundColor" name="AppColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="35" id="sPB-Ii-cuj"/>
+                                        </constraints>
+                                        <state key="normal" title="احصائيات المتسوقين" image="statics-32 (1)">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <integer key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <segue destination="Cx5-h6-Gmh" kind="show" id="cLq-eL-TPi"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BzM-9G-LXd">
+                                        <rect key="frame" x="40" y="75" width="295" height="35"/>
+                                        <color key="backgroundColor" name="AppColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="35" id="b9z-UM-dde"/>
+                                        </constraints>
+                                        <state key="normal" title="اداره المتسوقين" image="barcode-32">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <integer key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="readBarCode:" destination="vf1-hq-5tw" eventType="touchUpInside" id="OAd-Qe-VHP"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mbr-MR-B9E">
+                                        <rect key="frame" x="40" y="150" width="295" height="35"/>
+                                        <color key="backgroundColor" name="AppColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="35" id="Uhw-n3-yYV"/>
+                                        </constraints>
+                                        <state key="normal" title="اداره الفروع" image="store-32">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <integer key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="mbr-MR-B9E" firstAttribute="top" secondItem="BzM-9G-LXd" secondAttribute="bottom" constant="40" id="CsS-KC-rAZ"/>
+                                    <constraint firstItem="4ha-37-reg" firstAttribute="top" secondItem="Kro-MO-RL2" secondAttribute="top" id="Eod-0H-BqM"/>
+                                    <constraint firstAttribute="trailing" secondItem="BzM-9G-LXd" secondAttribute="trailing" constant="40" id="GCw-Fu-gPa"/>
+                                    <constraint firstAttribute="bottom" secondItem="mbr-MR-B9E" secondAttribute="bottom" constant="40" id="Hi9-vW-9lF"/>
+                                    <constraint firstAttribute="trailing" secondItem="mbr-MR-B9E" secondAttribute="trailing" constant="40" id="Klj-o3-fYP"/>
+                                    <constraint firstItem="mbr-MR-B9E" firstAttribute="leading" secondItem="Kro-MO-RL2" secondAttribute="leading" constant="40" id="WvW-aA-aoz"/>
+                                    <constraint firstItem="BzM-9G-LXd" firstAttribute="leading" secondItem="Kro-MO-RL2" secondAttribute="leading" constant="40" id="cec-M7-ih7"/>
+                                    <constraint firstAttribute="trailing" secondItem="4ha-37-reg" secondAttribute="trailing" constant="40" id="kQf-h6-3Vy"/>
+                                    <constraint firstItem="4ha-37-reg" firstAttribute="leading" secondItem="Kro-MO-RL2" secondAttribute="leading" constant="40" id="syt-c2-6U3"/>
+                                    <constraint firstItem="BzM-9G-LXd" firstAttribute="top" secondItem="4ha-37-reg" secondAttribute="bottom" constant="40" id="tss-Uj-uFn"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9f2-21-bWG">
+                                <rect key="frame" x="0.0" y="-30" width="375" height="366.5"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mail 4" translatesAutoresizingMaskIntoConstraints="NO" id="x0J-VF-0IJ">
+                                        <rect key="frame" x="62.5" y="105.5" width="250" height="250"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="250" id="Eu4-AB-ofE"/>
+                                            <constraint firstAttribute="height" constant="250" id="TCW-S1-cJJ"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" name="AppColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="x0J-VF-0IJ" secondAttribute="bottom" constant="11.333333333333314" id="5Qg-Yp-dOY"/>
+                                    <constraint firstItem="x0J-VF-0IJ" firstAttribute="centerY" secondItem="9f2-21-bWG" secondAttribute="centerY" constant="47.000000000000028" id="Tl1-oS-y4Q"/>
+                                    <constraint firstItem="x0J-VF-0IJ" firstAttribute="centerX" secondItem="9f2-21-bWG" secondAttribute="centerX" id="k5a-Wo-Wgz"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="rkZ-s9-N63" firstAttribute="trailing" secondItem="9f2-21-bWG" secondAttribute="trailing" id="21b-Od-582"/>
+                            <constraint firstItem="Kro-MO-RL2" firstAttribute="centerX" secondItem="XZj-nM-V7S" secondAttribute="centerX" id="4PK-CT-JeZ"/>
+                            <constraint firstItem="Kro-MO-RL2" firstAttribute="leading" secondItem="rkZ-s9-N63" secondAttribute="leading" id="HkX-nU-qjX"/>
+                            <constraint firstItem="Kro-MO-RL2" firstAttribute="top" secondItem="9f2-21-bWG" secondAttribute="bottom" constant="40" id="P33-Uk-PrX"/>
+                            <constraint firstItem="9f2-21-bWG" firstAttribute="top" secondItem="XZj-nM-V7S" secondAttribute="top" constant="-30" id="TN8-vd-1Qi"/>
+                            <constraint firstItem="9f2-21-bWG" firstAttribute="leading" secondItem="XZj-nM-V7S" secondAttribute="leading" id="XEn-o2-jk5"/>
+                            <constraint firstItem="rkZ-s9-N63" firstAttribute="trailing" secondItem="Kro-MO-RL2" secondAttribute="trailing" id="pX9-rm-2p0"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="rkZ-s9-N63"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="tbR-VA-Bzn"/>
+                    <navigationItem key="navigationItem" id="BvH-TM-Axb"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6v0-kr-fuv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="718.84057971014499" y="1641.8478260869567"/>
+        </scene>
+        <!--غداً-->
+        <scene sceneID="ORi-2u-IVm">
+            <objects>
+                <viewController id="RRK-X5-Tmi" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4vB-80-cvV">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="hyx-Z3-z7s"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="غداً" image="calendar" catalog="system" id="QlC-Wy-NMD"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Pu3-Xk-DUp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="719" y="3046"/>
+        </scene>
+        <!--احصائيات المتسوقين-->
+        <scene sceneID="EEt-D4-ffb">
+            <objects>
+                <viewController storyboardIdentifier="StoreManagementViewViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="boi-9H-h4g" customClass="StoreManagementViewViewController" customModule="Book_a_cart" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fKA-it-bVi">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gfi-pd-FS6">
+                                <rect key="frame" x="0.0" y="57" width="375" height="90"/>
+                                <color key="backgroundColor" name="AppColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="90" id="fcu-CZ-AMn"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="إجمالي المتسوقين الحالي" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Llt-wN-pNl">
+                                <rect key="frame" x="40" y="112" width="295" height="24"/>
+                                <fontDescription key="fontDescription" name="GEDinkum-Bold" family="GE Dinkum" pointSize="20"/>
+                                <color key="textColor" red="0.92941176469999998" green="0.92941176469999998" blue="0.92941176469999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="4ha-2K-Ldp">
+                                <rect key="frame" x="0.0" y="165" width="375" height="524"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="68" id="Upp-vB-Yez" customClass="DataTableViewCell" customModule="Book_a_cart" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="68"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Upp-vB-Yez" id="bQb-fo-lmT">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="68"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M5E-6b-Hsm">
+                                                    <rect key="frame" x="35" y="21" width="305" height="26"/>
+                                                    <fontDescription key="fontDescription" name="GEDinkum-Bold" family="GE Dinkum" pointSize="15"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottomMargin" secondItem="M5E-6b-Hsm" secondAttribute="bottom" constant="10" id="M6l-w0-dp1"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="M5E-6b-Hsm" secondAttribute="trailing" constant="20" id="Rp3-fw-54I"/>
+                                                <constraint firstItem="M5E-6b-Hsm" firstAttribute="leading" secondItem="bQb-fo-lmT" secondAttribute="leadingMargin" constant="20" id="chh-6A-ITS"/>
+                                                <constraint firstItem="M5E-6b-Hsm" firstAttribute="top" secondItem="bQb-fo-lmT" secondAttribute="topMargin" constant="10" id="xiW-k7-9KI"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="timeLabel" destination="M5E-6b-Hsm" id="han-Bb-aXG"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="boi-9H-h4g" id="byo-xX-6dZ"/>
+                                    <outlet property="delegate" destination="boi-9H-h4g" id="Gv1-S2-z0e"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.92941176470588238" green="0.92941176470588238" blue="0.92941176470588238" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="nEb-lb-9VP" firstAttribute="trailing" secondItem="4ha-2K-Ldp" secondAttribute="trailing" id="6Le-qr-lqi"/>
+                            <constraint firstItem="Llt-wN-pNl" firstAttribute="top" secondItem="Gfi-pd-FS6" secondAttribute="bottom" constant="-35" id="6bk-Lt-wsG"/>
+                            <constraint firstItem="Gfi-pd-FS6" firstAttribute="top" secondItem="fKA-it-bVi" secondAttribute="top" constant="57" id="6yH-mF-Hv0"/>
+                            <constraint firstItem="4ha-2K-Ldp" firstAttribute="leading" secondItem="nEb-lb-9VP" secondAttribute="leading" id="JWz-k0-txm"/>
+                            <constraint firstItem="Llt-wN-pNl" firstAttribute="leading" secondItem="nEb-lb-9VP" secondAttribute="leading" constant="40" id="KFO-vq-l5B"/>
+                            <constraint firstItem="nEb-lb-9VP" firstAttribute="trailing" secondItem="Llt-wN-pNl" secondAttribute="trailing" constant="40" id="QxF-8l-xRQ"/>
+                            <constraint firstItem="4ha-2K-Ldp" firstAttribute="top" secondItem="Llt-wN-pNl" secondAttribute="bottom" constant="29" id="evC-uB-b4n"/>
+                            <constraint firstItem="nEb-lb-9VP" firstAttribute="bottom" secondItem="4ha-2K-Ldp" secondAttribute="bottom" constant="-71" id="hdT-Vk-pRx"/>
+                            <constraint firstItem="Gfi-pd-FS6" firstAttribute="leading" secondItem="fKA-it-bVi" secondAttribute="leading" id="jGr-gs-hjN"/>
+                            <constraint firstItem="nEb-lb-9VP" firstAttribute="trailing" secondItem="Gfi-pd-FS6" secondAttribute="trailing" id="k8m-Nk-gDc"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="nEb-lb-9VP"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="اليوم" image="calendar" catalog="system" id="Hme-SU-8Kj"/>
+                    <navigationItem key="navigationItem" title="احصائيات المتسوقين" id="9Yb-Vv-nH4"/>
+                    <connections>
+                        <outlet property="tableView" destination="4ha-2K-Ldp" id="Idg-QW-ob8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uvz-1z-aFt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1531.8840579710145" y="2326.630434782609"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="zLW-fJ-Jui">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="APE-aK-yb8" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" hidden="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Pdr-gt-p69">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="AHb-nn-l1a">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="j1W-lw-Xa9"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Cu8-vU-kmY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="132.88043478260872"/>
+        </scene>
+        <!--المتاجر-->
+        <scene sceneID="437-gc-DmZ">
+            <objects>
+                <viewController storyboardIdentifier="StoresListViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="fyW-gL-WOk" customClass="StoresListViewController" customModule="Book_a_cart" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="TtJ-g1-YLS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S1b-nd-y3d">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="90"/>
+                                <color key="backgroundColor" name="AppColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="90" id="aNQ-7u-9nI"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="26u-wv-ncs">
+                                <rect key="frame" x="20" y="60" width="335" height="56"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="fyW-gL-WOk" id="Q24-OH-bBS"/>
+                                </connections>
+                            </searchBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="lXB-8G-fx6">
+                                <rect key="frame" x="0.0" y="131" width="375" height="487"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="cell" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="136" id="m36-Uq-Fvg" customClass="StoresCell" customModule="Book_a_cart" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="136"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="m36-Uq-Fvg" id="gmt-As-aM6">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="136"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zHP-AH-by6">
+                                                    <rect key="frame" x="20" y="10" width="335" height="116"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SmL-aM-ecD">
+                                                            <rect key="frame" x="268" y="80" width="42" height="20"/>
+                                                            <fontDescription key="fontDescription" name="GEDinkum-Bold" family="GE Dinkum" pointSize="17"/>
+                                                            <color key="textColor" red="0.2901960784" green="0.56470588239999997" blue="0.12941176469999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Bs-6b-MTE">
+                                                            <rect key="frame" x="130" y="25" width="115" height="20"/>
+                                                            <fontDescription key="fontDescription" name="GEDinkum-Bold" family="GE Dinkum" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Pta-Zz-913">
+                                                            <rect key="frame" x="265" y="20" width="50" height="50"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="50" id="8IG-od-Bhm"/>
+                                                                <constraint firstAttribute="width" constant="50" id="yx3-Dk-0Gk"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gse-xg-Zon">
+                                                            <rect key="frame" x="20" y="25" width="90" height="32"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="90" id="8Ds-NQ-m8w"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" name="GEDinkum-Bold" family="GE Dinkum" pointSize="17"/>
+                                                            <state key="normal" title="Button">
+                                                                <color key="titleColor" red="1" green="1" blue="0.99607843139999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            </state>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                    <integer key="value" value="5"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                            </userDefinedRuntimeAttributes>
+                                                            <connections>
+                                                                <action selector="bookAppointment:" destination="m36-Uq-Fvg" eventType="touchUpInside" id="MFs-7G-e5M"/>
+                                                            </connections>
+                                                        </button>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstItem="Pta-Zz-913" firstAttribute="top" secondItem="zHP-AH-by6" secondAttribute="top" constant="20" id="2Vr-uP-3JZ"/>
+                                                        <constraint firstItem="Gse-xg-Zon" firstAttribute="leading" secondItem="zHP-AH-by6" secondAttribute="leading" constant="20" id="CL6-Ja-Y3f"/>
+                                                        <constraint firstItem="0Bs-6b-MTE" firstAttribute="leading" secondItem="Gse-xg-Zon" secondAttribute="trailing" constant="20" id="EMY-wb-SKK"/>
+                                                        <constraint firstItem="0Bs-6b-MTE" firstAttribute="top" secondItem="zHP-AH-by6" secondAttribute="top" constant="25" id="MVA-Ak-xnI"/>
+                                                        <constraint firstAttribute="trailing" secondItem="SmL-aM-ecD" secondAttribute="trailing" constant="25" id="SC6-CV-BPS"/>
+                                                        <constraint firstAttribute="trailing" secondItem="Pta-Zz-913" secondAttribute="trailing" constant="20" id="So9-3W-B0g"/>
+                                                        <constraint firstItem="SmL-aM-ecD" firstAttribute="top" secondItem="Pta-Zz-913" secondAttribute="bottom" constant="10" id="bsz-gf-pWX"/>
+                                                        <constraint firstItem="Gse-xg-Zon" firstAttribute="top" secondItem="0Bs-6b-MTE" secondAttribute="top" id="i2Z-Ov-sAh"/>
+                                                        <constraint firstAttribute="width" constant="327" id="qpF-RT-4Us"/>
+                                                        <constraint firstAttribute="height" constant="120" id="uHV-gt-jWN"/>
+                                                        <constraint firstItem="Pta-Zz-913" firstAttribute="leading" secondItem="0Bs-6b-MTE" secondAttribute="trailing" constant="20" id="yv3-HY-6KA"/>
+                                                    </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <integer key="value" value="10"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstItem="zHP-AH-by6" firstAttribute="top" secondItem="gmt-As-aM6" secondAttribute="top" constant="10" id="IFm-bo-Kyw"/>
+                                                <constraint firstAttribute="trailing" secondItem="zHP-AH-by6" secondAttribute="trailing" constant="20" id="MtL-GE-A0d"/>
+                                                <constraint firstAttribute="bottom" secondItem="zHP-AH-by6" secondAttribute="bottom" constant="10" id="RZ0-I7-H52"/>
+                                                <constraint firstItem="zHP-AH-by6" firstAttribute="leading" secondItem="gmt-As-aM6" secondAttribute="leading" constant="20" id="t3z-0K-zfO"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <connections>
+                                            <outlet property="bookButton" destination="Gse-xg-Zon" id="EMZ-65-5Oi"/>
+                                            <outlet property="storeLogo" destination="Pta-Zz-913" id="xlR-MU-0LP"/>
+                                            <outlet property="storeNameLabel" destination="0Bs-6b-MTE" id="7g6-bi-f2n"/>
+                                            <outlet property="storeStatus" destination="SmL-aM-ecD" id="47P-Lc-ePB"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="fyW-gL-WOk" id="mtr-iv-1jh"/>
+                                    <outlet property="delegate" destination="fyW-gL-WOk" id="HaW-hp-ZHo"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.92941176470588238" green="0.92941176470588238" blue="0.92941176470588238" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="lXB-8G-fx6" firstAttribute="leading" secondItem="zR5-gF-4dB" secondAttribute="leading" id="0pG-O0-c5F"/>
+                            <constraint firstItem="zR5-gF-4dB" firstAttribute="bottom" secondItem="lXB-8G-fx6" secondAttribute="bottom" id="D9d-d1-wFl"/>
+                            <constraint firstItem="26u-wv-ncs" firstAttribute="trailing" secondItem="zR5-gF-4dB" secondAttribute="trailing" constant="-20" id="Yll-VO-YUb"/>
+                            <constraint firstItem="S1b-nd-y3d" firstAttribute="leading" secondItem="zR5-gF-4dB" secondAttribute="leading" id="ZKh-8v-TAJ"/>
+                            <constraint firstItem="S1b-nd-y3d" firstAttribute="top" secondItem="TtJ-g1-YLS" secondAttribute="top" id="ex3-UA-4sb"/>
+                            <constraint firstItem="lXB-8G-fx6" firstAttribute="top" secondItem="26u-wv-ncs" secondAttribute="bottom" constant="15" id="j2F-Wz-R1x"/>
+                            <constraint firstItem="26u-wv-ncs" firstAttribute="leading" secondItem="zR5-gF-4dB" secondAttribute="leading" constant="20" id="nXa-NY-dCH"/>
+                            <constraint firstItem="zR5-gF-4dB" firstAttribute="trailing" secondItem="lXB-8G-fx6" secondAttribute="trailing" id="sNh-UH-mFD"/>
+                            <constraint firstItem="26u-wv-ncs" firstAttribute="top" secondItem="S1b-nd-y3d" secondAttribute="bottom" constant="-30" id="vaU-Ut-dty"/>
+                            <constraint firstItem="zR5-gF-4dB" firstAttribute="trailing" secondItem="S1b-nd-y3d" secondAttribute="trailing" id="zyv-8w-ivJ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="zR5-gF-4dB"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="المتاجر" image="cart.fill" catalog="system" id="T1Y-gT-x8C"/>
+                    <navigationItem key="navigationItem" id="fGO-Qk-MKz"/>
+                    <connections>
+                        <outlet property="searchBar" destination="26u-wv-ncs" id="LoF-qY-6fL"/>
+                        <outlet property="tableView" destination="lXB-8G-fx6" id="Dk4-mg-VND"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="stq-bP-abV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3103" y="1642"/>
+        </scene>
+        <!--الملف الشخصي-->
+        <scene sceneID="92b-eb-mIp">
+            <objects>
+                <viewController id="kvK-Hj-4Fw" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="TyW-2o-5Mu">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="tbd-so-4qo"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="الملف الشخصي" image="person.fill" catalog="system" id="Hrs-2a-dX7"/>
+                    <navigationItem key="navigationItem" id="gvq-wY-MXg"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iRH-SN-dBu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3103" y="2371"/>
+        </scene>
+        <!--Bar Code View Controller-->
+        <scene sceneID="Npw-Qx-Jqe">
+            <objects>
+                <viewController storyboardIdentifier="BarCodeViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="3U6-Eh-KNP" customClass="BarCodeViewController" customModule="Book_a_cart" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Zrk-6T-u5i">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="تم حجز موعد بنجاح" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nKv-xE-uAQ">
+                                <rect key="frame" x="20" y="50" width="335" height="20"/>
+                                <fontDescription key="fontDescription" name="GEDinkum-Bold" family="GE Dinkum" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mail 2" translatesAutoresizingMaskIntoConstraints="NO" id="HkX-Pa-9RS">
+                                <rect key="frame" x="20" y="160" width="335" height="354"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="354" id="P5j-Ia-gzi"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="التاريخ و الوقت" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="akU-hP-uHg">
+                                <rect key="frame" x="20" y="534" width="335" height="20"/>
+                                <fontDescription key="fontDescription" name="GEDinkum-Bold" family="GE Dinkum" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="giW-Y6-PbX">
+                                <rect key="frame" x="20" y="574" width="335" height="32"/>
+                                <color key="backgroundColor" name="AppColor"/>
+                                <fontDescription key="fontDescription" name="GEDinkum-Bold" family="GE Dinkum" pointSize="17"/>
+                                <state key="normal" title="العوده">
+                                    <color key="titleColor" red="1" green="1" blue="0.99877226809999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="dismiss:" destination="3U6-Eh-KNP" eventType="touchUpInside" id="jAB-6o-Bt7"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="nKv-xE-uAQ" firstAttribute="top" secondItem="oWM-eU-IoI" secondAttribute="top" constant="50" id="DBB-bv-J4M"/>
+                            <constraint firstItem="nKv-xE-uAQ" firstAttribute="leading" secondItem="oWM-eU-IoI" secondAttribute="leading" constant="20" id="EHh-tB-8CN"/>
+                            <constraint firstItem="oWM-eU-IoI" firstAttribute="trailing" secondItem="akU-hP-uHg" secondAttribute="trailing" constant="20" id="FcX-VV-25w"/>
+                            <constraint firstItem="HkX-Pa-9RS" firstAttribute="top" secondItem="nKv-xE-uAQ" secondAttribute="bottom" constant="90" id="HRP-Zs-d8H"/>
+                            <constraint firstItem="giW-Y6-PbX" firstAttribute="leading" secondItem="oWM-eU-IoI" secondAttribute="leading" constant="20" id="HxL-eP-FfV"/>
+                            <constraint firstItem="oWM-eU-IoI" firstAttribute="trailing" secondItem="nKv-xE-uAQ" secondAttribute="trailing" constant="20" id="Vtq-hQ-GAH"/>
+                            <constraint firstItem="giW-Y6-PbX" firstAttribute="top" secondItem="akU-hP-uHg" secondAttribute="bottom" constant="20" id="byt-sB-oEH"/>
+                            <constraint firstItem="HkX-Pa-9RS" firstAttribute="leading" secondItem="oWM-eU-IoI" secondAttribute="leading" constant="20" id="chl-Qp-kkd"/>
+                            <constraint firstItem="oWM-eU-IoI" firstAttribute="trailing" secondItem="HkX-Pa-9RS" secondAttribute="trailing" constant="20" id="hau-c0-jG1"/>
+                            <constraint firstItem="akU-hP-uHg" firstAttribute="leading" secondItem="oWM-eU-IoI" secondAttribute="leading" constant="20" id="umW-Tq-vL5"/>
+                            <constraint firstItem="akU-hP-uHg" firstAttribute="top" secondItem="HkX-Pa-9RS" secondAttribute="bottom" constant="20" id="xIl-0Z-N7a"/>
+                            <constraint firstItem="oWM-eU-IoI" firstAttribute="trailing" secondItem="giW-Y6-PbX" secondAttribute="trailing" constant="20" id="y5S-QM-QKb"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="oWM-eU-IoI"/>
+                    </view>
+                    <connections>
+                        <outlet property="barCodeImage" destination="HkX-Pa-9RS" id="pIq-Qe-qYg"/>
+                        <outlet property="dateAndTimeLabel" destination="akU-hP-uHg" id="Zgg-HV-oYg"/>
+                        <outlet property="storeName" destination="nKv-xE-uAQ" id="MGL-Ss-50r"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PUQ-OW-p2H" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3934" y="2371"/>
+        </scene>
+        <!--Customer Pass View Controller-->
+        <scene sceneID="1Hd-mC-fmu">
+            <objects>
+                <viewController storyboardIdentifier="CustomerPassViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="wbt-aN-g0U" customClass="CustomerPassViewController" customModule="Book_a_cart" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OIs-Rh-Neo">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="isK-eX-VJB">
+                                <rect key="frame" x="20" y="366.5" width="335" height="158"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="السماح للعميل بالدخول" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qfV-8W-7tV">
+                                        <rect key="frame" x="20" y="20" width="295" height="46"/>
+                                        <fontDescription key="fontDescription" name="GEDinkum-Bold" family="GE Dinkum" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="coC-3A-J1b">
+                                        <rect key="frame" x="195" y="86" width="100" height="32"/>
+                                        <color key="backgroundColor" red="0.4941176471" green="0.80784313730000001" blue="0.12941176469999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="S99-3U-F9W"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="GEDinkum-Bold" family="GE Dinkum" pointSize="17"/>
+                                        <state key="normal" title="نعم">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <integer key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WSB-eE-blj">
+                                        <rect key="frame" x="40" y="86" width="100" height="32"/>
+                                        <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="yai-o7-Rdo"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="GEDinkum-Bold" family="GE Dinkum" pointSize="17"/>
+                                        <state key="normal" title="لا">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <integer key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="WSB-eE-blj" secondAttribute="bottom" constant="40" id="4Pe-h5-zE6"/>
+                                    <constraint firstItem="WSB-eE-blj" firstAttribute="baseline" secondItem="coC-3A-J1b" secondAttribute="baseline" id="J7J-5e-7nn">
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <integer key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </constraint>
+                                    <constraint firstAttribute="trailing" secondItem="qfV-8W-7tV" secondAttribute="trailing" constant="20" id="PEa-38-xul"/>
+                                    <constraint firstItem="WSB-eE-blj" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="isK-eX-VJB" secondAttribute="leading" constant="20" symbolic="YES" id="XKV-ie-lEC"/>
+                                    <constraint firstItem="coC-3A-J1b" firstAttribute="top" secondItem="qfV-8W-7tV" secondAttribute="bottom" constant="20" id="adC-uE-GHL"/>
+                                    <constraint firstItem="coC-3A-J1b" firstAttribute="leading" secondItem="WSB-eE-blj" secondAttribute="trailing" constant="55" id="i4c-Ik-cqQ"/>
+                                    <constraint firstAttribute="trailing" secondItem="coC-3A-J1b" secondAttribute="trailing" constant="40" id="kiA-tK-saR"/>
+                                    <constraint firstItem="qfV-8W-7tV" firstAttribute="top" secondItem="isK-eX-VJB" secondAttribute="top" constant="20" id="kmT-LH-6UQ"/>
+                                    <constraint firstItem="WSB-eE-blj" firstAttribute="top" secondItem="coC-3A-J1b" secondAttribute="top" id="tQN-3g-yuN"/>
+                                    <constraint firstItem="qfV-8W-7tV" firstAttribute="leading" secondItem="isK-eX-VJB" secondAttribute="leading" constant="20" id="toz-LG-l8A"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qtt-8Y-PbQ">
+                                <rect key="frame" x="0.0" y="-30" width="375" height="366.5"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mail 4" translatesAutoresizingMaskIntoConstraints="NO" id="P6p-t7-tA9">
+                                        <rect key="frame" x="62.5" y="105.5" width="250" height="250"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="250" id="44o-wB-xCh"/>
+                                            <constraint firstAttribute="width" constant="250" id="ihp-VG-nKL"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" name="AppColor"/>
+                                <constraints>
+                                    <constraint firstItem="P6p-t7-tA9" firstAttribute="centerY" secondItem="Qtt-8Y-PbQ" secondAttribute="centerY" constant="47.000000000000028" id="1I6-uq-W8V"/>
+                                    <constraint firstAttribute="bottom" secondItem="P6p-t7-tA9" secondAttribute="bottom" constant="11.333333333333314" id="Ou9-Vg-8uH"/>
+                                    <constraint firstItem="P6p-t7-tA9" firstAttribute="centerX" secondItem="Qtt-8Y-PbQ" secondAttribute="centerX" id="fm9-lx-LeC"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="isK-eX-VJB" firstAttribute="top" secondItem="Qtt-8Y-PbQ" secondAttribute="bottom" constant="30" id="Aj3-eM-tXU"/>
+                            <constraint firstItem="Qtt-8Y-PbQ" firstAttribute="leading" secondItem="OIs-Rh-Neo" secondAttribute="leading" id="LgT-kJ-vK7"/>
+                            <constraint firstItem="dZ7-G2-ej3" firstAttribute="trailing" secondItem="Qtt-8Y-PbQ" secondAttribute="trailing" id="VmR-WI-bkD"/>
+                            <constraint firstItem="Qtt-8Y-PbQ" firstAttribute="top" secondItem="OIs-Rh-Neo" secondAttribute="top" constant="-30" id="hmU-Hs-Uaa"/>
+                            <constraint firstItem="isK-eX-VJB" firstAttribute="leading" secondItem="dZ7-G2-ej3" secondAttribute="leading" constant="20" id="hxV-N6-rXf"/>
+                            <constraint firstItem="isK-eX-VJB" firstAttribute="centerY" secondItem="OIs-Rh-Neo" secondAttribute="centerY" constant="112" id="iZ2-Zh-OM9"/>
+                            <constraint firstItem="dZ7-G2-ej3" firstAttribute="trailing" secondItem="isK-eX-VJB" secondAttribute="trailing" constant="20" id="kTX-pd-1MY"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="dZ7-G2-ej3"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3F4-Bv-4EE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4733.6000000000004" y="2369.8650674662672"/>
+        </scene>
+        <!--Booking Cart View Controller-->
+        <scene sceneID="pBN-Dw-uka">
+            <objects>
+                <viewController storyboardIdentifier="BookingCartViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="eGZ-OI-Y3q" customClass="BookingCartViewController" customModule="Book_a_cart" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hqG-X1-ixF">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mEk-dC-Px4">
+                                <rect key="frame" x="20" y="259" width="335" height="212"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="اختيار موعد" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MG8-S8-WTr" customClass="SkyFloatingLabelTextField" customModule="Book_a_cart" customModuleProvider="target">
+                                        <rect key="frame" x="20" y="60" width="295" height="30"/>
+                                        <fontDescription key="fontDescription" name="GEDinkum-Bold" family="GE Dinkum" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                                <color key="value" name="AppColor"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="titleColor">
+                                                <color key="value" name="AppColor"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="selectedTitleColor">
+                                                <color key="value" name="AppColor"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="selectedLineColor">
+                                                <color key="value" name="AppColor"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <outlet property="delegate" destination="eGZ-OI-Y3q" id="dpG-F4-X1U"/>
+                                        </connections>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="تحديد موعد التسوق" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qo3-dC-568">
+                                        <rect key="frame" x="20" y="20" width="275" height="20"/>
+                                        <fontDescription key="fontDescription" name="GEDinkum-Bold" family="GE Dinkum" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y2N-qu-En7">
+                                        <rect key="frame" x="20" y="152" width="295" height="40"/>
+                                        <color key="backgroundColor" name="AppColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="1K2-tS-w1y"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="AeG-Ou-OKr"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="GEDinkum-Bold" family="GE Dinkum" pointSize="17"/>
+                                        <state key="normal" title="تاكيد الموعد">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <integer key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="confirmAppointment:" destination="eGZ-OI-Y3q" eventType="touchUpInside" id="ipq-Pa-fnx"/>
+                                        </connections>
+                                    </button>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="عدد المرافقين" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Byr-Od-5Ks" customClass="SkyFloatingLabelTextField" customModule="Book_a_cart" customModuleProvider="target">
+                                        <rect key="frame" x="20" y="110" width="295" height="22"/>
+                                        <fontDescription key="fontDescription" name="GEDinkum-Bold" family="GE Dinkum" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                                <color key="value" name="AppColor"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="titleColor">
+                                                <color key="value" red="0.59215686270000001" green="0.59215686270000001" blue="0.59215686270000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="selectedTitleColor">
+                                                <color key="value" name="AppColor"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="selectedLineColor">
+                                                <color key="value" name="AppColor"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <outlet property="delegate" destination="eGZ-OI-Y3q" id="3v5-7q-hQ7"/>
+                                        </connections>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="06r-MB-nS3">
+                                        <rect key="frame" x="20" y="60" width="295" height="30"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <action selector="showDateTimerPicker:" destination="eGZ-OI-Y3q" eventType="touchUpInside" id="wYn-bY-gah"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="1" blue="0.99877226807317065" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="qo3-dC-568" firstAttribute="leading" secondItem="mEk-dC-Px4" secondAttribute="leading" constant="20" id="5rA-Hl-8GO"/>
+                                    <constraint firstItem="06r-MB-nS3" firstAttribute="top" secondItem="MG8-S8-WTr" secondAttribute="top" id="8th-Bb-fSO"/>
+                                    <constraint firstItem="MG8-S8-WTr" firstAttribute="top" secondItem="qo3-dC-568" secondAttribute="bottom" constant="20" id="AGZ-Kp-yFW"/>
+                                    <constraint firstItem="06r-MB-nS3" firstAttribute="leading" secondItem="MG8-S8-WTr" secondAttribute="leading" id="Dqt-87-IgC"/>
+                                    <constraint firstItem="06r-MB-nS3" firstAttribute="trailing" secondItem="MG8-S8-WTr" secondAttribute="trailing" id="Msg-qV-uIy"/>
+                                    <constraint firstAttribute="trailing" secondItem="MG8-S8-WTr" secondAttribute="trailing" constant="20" id="Ngr-1d-hgf"/>
+                                    <constraint firstItem="Byr-Od-5Ks" firstAttribute="top" secondItem="MG8-S8-WTr" secondAttribute="bottom" constant="20" id="UGI-DS-qwV"/>
+                                    <constraint firstItem="y2N-qu-En7" firstAttribute="top" secondItem="Byr-Od-5Ks" secondAttribute="bottom" constant="20" id="UpJ-9c-7uk"/>
+                                    <constraint firstAttribute="trailing" secondItem="y2N-qu-En7" secondAttribute="trailing" constant="20" id="XVz-Fb-xPE"/>
+                                    <constraint firstItem="MG8-S8-WTr" firstAttribute="leading" secondItem="mEk-dC-Px4" secondAttribute="leading" constant="20" id="b24-gm-8cw"/>
+                                    <constraint firstItem="Byr-Od-5Ks" firstAttribute="leading" secondItem="MG8-S8-WTr" secondAttribute="leading" id="eQ9-Zl-qrR"/>
+                                    <constraint firstAttribute="trailing" secondItem="qo3-dC-568" secondAttribute="trailing" constant="40" id="nSm-Ls-ofX"/>
+                                    <constraint firstItem="Byr-Od-5Ks" firstAttribute="trailing" secondItem="MG8-S8-WTr" secondAttribute="trailing" id="oJM-Lv-8aO"/>
+                                    <constraint firstItem="qo3-dC-568" firstAttribute="top" secondItem="mEk-dC-Px4" secondAttribute="top" constant="20" id="prW-5E-kRM"/>
+                                    <constraint firstItem="06r-MB-nS3" firstAttribute="bottom" secondItem="MG8-S8-WTr" secondAttribute="bottom" id="srP-sc-fpL"/>
+                                    <constraint firstAttribute="bottom" secondItem="y2N-qu-En7" secondAttribute="bottom" constant="20" id="twZ-bL-6Nm"/>
+                                    <constraint firstItem="y2N-qu-En7" firstAttribute="leading" secondItem="mEk-dC-Px4" secondAttribute="leading" constant="20" id="zrp-nN-JbJ"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="vVA-75-a0E" firstAttribute="trailing" secondItem="mEk-dC-Px4" secondAttribute="trailing" constant="20" id="9YR-YL-GYa"/>
+                            <constraint firstItem="mEk-dC-Px4" firstAttribute="leading" secondItem="vVA-75-a0E" secondAttribute="leading" constant="20" id="Ka4-p7-QWW"/>
+                            <constraint firstItem="mEk-dC-Px4" firstAttribute="centerX" secondItem="hqG-X1-ixF" secondAttribute="centerX" id="RL6-GB-bsn"/>
+                            <constraint firstItem="mEk-dC-Px4" firstAttribute="centerY" secondItem="hqG-X1-ixF" secondAttribute="centerY" constant="31.5" id="lUg-M4-IN0"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="vVA-75-a0E"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ZQI-Tb-kNQ"/>
+                    <connections>
+                        <outlet property="UserAppointment" destination="MG8-S8-WTr" id="N9T-6n-Zhu"/>
+                        <outlet property="numberOfEscorts" destination="Byr-Od-5Ks" id="NpQ-jQ-gu7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9kQ-u5-DJu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3935" y="1642"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="Aba-NT-aj5">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="Tze-g6-Ikh" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="0pY-hy-E7z"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="BSt-uo-H1w">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" name="AppColor"/>
+                        <color key="selectedImageTintColor" name="AppColor"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="fyW-gL-WOk" kind="relationship" relationship="viewControllers" id="pG2-Ho-rM9"/>
+                        <segue destination="Lha-PN-EVL" kind="relationship" relationship="viewControllers" id="LRm-iF-Sbg"/>
+                        <segue destination="kvK-Hj-4Fw" kind="relationship" relationship="viewControllers" id="LwI-2Y-lkY"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3UV-cx-ovj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2348" y="1642"/>
+        </scene>
+        <!--احصائيات المتسوقين-->
+        <scene sceneID="HI9-qQ-LQo">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="Cx5-h6-Gmh" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="احصائيات المتسوقين" id="mxk-nY-qMm"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="YlN-DJ-GXc">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" name="AppColor"/>
+                        <color key="selectedImageTintColor" name="AppColor"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="boi-9H-h4g" kind="relationship" relationship="viewControllers" id="nf7-da-mqj"/>
+                        <segue destination="RRK-X5-Tmi" kind="relationship" relationship="viewControllers" id="Xtg-1k-3xY"/>
+                        <segue destination="139-QN-N6w" kind="relationship" relationship="viewControllers" id="XTi-qp-D9h"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GtC-lV-URf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="747.82608695652175" y="2326.630434782609"/>
+        </scene>
+        <!--Customer Resistor View Controller-->
+        <scene sceneID="7ST-zy-CCB">
+            <objects>
+                <viewController storyboardIdentifier="CustomerResistorViewController2" useStoryboardIdentifierAsRestorationIdentifier="YES" id="gK0-9t-HN0" customClass="CustomerResistorViewController" customModule="Book_a_cart" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="N63-UB-xbt">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kfs-4Z-aoy">
+                                <rect key="frame" x="0.0" y="175.5" width="375" height="316"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mail" translatesAutoresizingMaskIntoConstraints="NO" id="Pjm-sG-1Zr">
+                                        <rect key="frame" x="112.5" y="20" width="150" height="150"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="150" id="bwX-AD-5sg"/>
+                                            <constraint firstAttribute="width" constant="150" id="yPA-Ys-dpE"/>
+                                        </constraints>
+                                    </imageView>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="الاسم" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GKp-c3-HbT" customClass="SkyFloatingLabelTextField" customModule="Book_a_cart" customModuleProvider="target">
+                                        <rect key="frame" x="40" y="190" width="295" height="22"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="GEDinkum-Bold" family="GE Dinkum" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                                <color key="value" name="AppColor"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="titleColor">
+                                                <color key="value" red="0.59215686270000001" green="0.59215686270000001" blue="0.59215686270000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="selectedTitleColor">
+                                                <color key="value" name="AppColor"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="selectedLineColor">
+                                                <color key="value" name="AppColor"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="البريد الالكتروني" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DOL-qo-OBA" customClass="SkyFloatingLabelTextField" customModule="Book_a_cart" customModuleProvider="target">
+                                        <rect key="frame" x="40" y="274" width="295" height="22"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="GEDinkum-Bold" family="GE Dinkum" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                                <color key="value" name="AppColor"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="titleColor">
+                                                <color key="value" red="0.59215686270000001" green="0.59215686270000001" blue="0.59215686270000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="selectedTitleColor">
+                                                <color key="value" name="AppColor"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="selectedLineColor">
+                                                <color key="value" name="AppColor"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="رقم الجوال" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eTs-3v-IXI" customClass="SkyFloatingLabelTextField" customModule="Book_a_cart" customModuleProvider="target">
+                                        <rect key="frame" x="40" y="232" width="295" height="22"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="GEDinkum-Bold" family="GE Dinkum" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                                <color key="value" name="AppColor"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="titleColor">
+                                                <color key="value" red="0.59215686270000001" green="0.59215686270000001" blue="0.59215686270000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="selectedTitleColor">
+                                                <color key="value" name="AppColor"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="selectedLineColor">
+                                                <color key="value" name="AppColor"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="GKp-c3-HbT" firstAttribute="leading" secondItem="Kfs-4Z-aoy" secondAttribute="leading" constant="40" id="9xf-OT-fIO"/>
+                                    <constraint firstAttribute="bottom" secondItem="DOL-qo-OBA" secondAttribute="bottom" constant="20" id="HEN-W6-GkX"/>
+                                    <constraint firstItem="DOL-qo-OBA" firstAttribute="top" secondItem="eTs-3v-IXI" secondAttribute="bottom" constant="20" id="NUU-aK-hls"/>
+                                    <constraint firstItem="GKp-c3-HbT" firstAttribute="top" secondItem="Pjm-sG-1Zr" secondAttribute="bottom" constant="20" id="Oxv-yz-LPf"/>
+                                    <constraint firstItem="eTs-3v-IXI" firstAttribute="leading" secondItem="Kfs-4Z-aoy" secondAttribute="leading" constant="40" id="Zv1-fi-Q7H"/>
+                                    <constraint firstAttribute="trailing" secondItem="GKp-c3-HbT" secondAttribute="trailing" constant="40" id="fDP-eQ-5Fw"/>
+                                    <constraint firstItem="Pjm-sG-1Zr" firstAttribute="centerX" secondItem="Kfs-4Z-aoy" secondAttribute="centerX" id="g2p-mG-HZ2"/>
+                                    <constraint firstItem="DOL-qo-OBA" firstAttribute="leading" secondItem="Kfs-4Z-aoy" secondAttribute="leading" constant="40" id="h2o-mN-KSc"/>
+                                    <constraint firstItem="Pjm-sG-1Zr" firstAttribute="top" secondItem="Kfs-4Z-aoy" secondAttribute="top" constant="20" id="hxe-Zu-tvR"/>
+                                    <constraint firstItem="eTs-3v-IXI" firstAttribute="top" secondItem="GKp-c3-HbT" secondAttribute="bottom" constant="20" id="kXE-bS-8D2"/>
+                                    <constraint firstAttribute="trailing" secondItem="eTs-3v-IXI" secondAttribute="trailing" constant="40" id="quN-pt-aOY"/>
+                                    <constraint firstAttribute="trailing" secondItem="DOL-qo-OBA" secondAttribute="trailing" constant="40" id="vXk-W4-tPW"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3TF-ew-Ycj">
+                                <rect key="frame" x="40" y="571.5" width="100" height="40"/>
+                                <color key="backgroundColor" name="AppColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="4g8-Xb-DTe"/>
+                                    <constraint firstAttribute="height" constant="40" id="Hdd-8e-SPo"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="GEDinkum-Bold" family="GE Dinkum" pointSize="17"/>
+                                <state key="normal" title="تسجيل">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Kfs-4Z-aoy" firstAttribute="centerY" secondItem="N63-UB-xbt" secondAttribute="centerY" id="8zB-u1-VYj"/>
+                            <constraint firstItem="3TF-ew-Ycj" firstAttribute="top" secondItem="Kfs-4Z-aoy" secondAttribute="bottom" constant="80" id="9QV-hk-j3n"/>
+                            <constraint firstItem="Kfs-4Z-aoy" firstAttribute="leading" secondItem="upB-jE-RFI" secondAttribute="leading" id="BmA-9H-SuX"/>
+                            <constraint firstItem="upB-jE-RFI" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="3TF-ew-Ycj" secondAttribute="trailing" symbolic="YES" id="CAp-Mw-4Fy"/>
+                            <constraint firstItem="3TF-ew-Ycj" firstAttribute="leading" secondItem="N63-UB-xbt" secondAttribute="leading" constant="40" id="HoF-Ln-w5V"/>
+                            <constraint firstItem="upB-jE-RFI" firstAttribute="trailing" secondItem="Kfs-4Z-aoy" secondAttribute="trailing" id="XXe-4j-2Dw"/>
+                            <constraint firstItem="Kfs-4Z-aoy" firstAttribute="centerX" secondItem="N63-UB-xbt" secondAttribute="centerX" id="qdA-Q1-UQr"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="upB-jE-RFI"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="x0i-8a-4h5"/>
+                    <connections>
+                        <outlet property="emailAddress" destination="DOL-qo-OBA" id="Xw4-zU-8t9"/>
+                        <outlet property="phoneNumber" destination="eTs-3v-IXI" id="sYI-Ml-GCx"/>
+                        <outlet property="userName" destination="GKp-c3-HbT" id="Mub-dR-6Yk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5UG-4h-amF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3103" y="884"/>
+        </scene>
+        <!--حجوزاتي-->
+        <scene sceneID="IN7-DQ-ie8">
+            <objects>
+                <viewController storyboardIdentifier="UserBookingViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Lha-PN-EVL" customClass="UserBookingViewController" customModule="Book_a_cart" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MpO-fQ-eDF">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zxC-dr-HpU">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="90"/>
+                                <color key="backgroundColor" name="AppColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="90" id="JkL-Yl-QLx"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="حجوزاتي" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wBa-Ll-rux">
+                                <rect key="frame" x="20" y="50" width="335" height="40"/>
+                                <fontDescription key="fontDescription" name="GEDinkum-Bold" family="GE Dinkum" pointSize="29"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="18X-9g-k5G">
+                                <rect key="frame" x="0.0" y="100" width="375" height="518"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="cell" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="136" id="yer-Oy-2l1" customClass="BookingCell" customModule="Book_a_cart" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="136"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="yer-Oy-2l1" id="naM-Ug-ITw">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="136"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nu5-DI-gjg">
+                                                    <rect key="frame" x="20" y="10" width="335" height="116"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ysR-fi-HSi">
+                                                            <rect key="frame" x="120" y="25" width="125" height="20"/>
+                                                            <fontDescription key="fontDescription" name="GEDinkum-Bold" family="GE Dinkum" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="KHP-ME-aFW">
+                                                            <rect key="frame" x="265" y="20" width="50" height="50"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="50" id="bO8-80-f9i"/>
+                                                                <constraint firstAttribute="height" constant="50" id="vse-Sh-SAA"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="co6-tY-Lna">
+                                                            <rect key="frame" x="203" y="55" width="42" height="20"/>
+                                                            <fontDescription key="fontDescription" name="GEDinkum-Bold" family="GE Dinkum" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wx2-P1-o8f">
+                                                            <rect key="frame" x="20" y="25" width="80" height="30"/>
+                                                            <color key="backgroundColor" name="AppColor"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="80" id="MwW-uR-NPe"/>
+                                                                <constraint firstAttribute="height" constant="30" id="kWO-SQ-45v"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" name="GEDinkum-Bold" family="GE Dinkum" pointSize="17"/>
+                                                            <state key="normal" title="تعديل" image="edit-20">
+                                                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            </state>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                    <integer key="value" value="5"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                            </userDefinedRuntimeAttributes>
+                                                            <connections>
+                                                                <action selector="editAppointment:" destination="yer-Oy-2l1" eventType="touchUpInside" id="SV5-YF-oJn"/>
+                                                            </connections>
+                                                        </button>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wK6-jg-im0">
+                                                            <rect key="frame" x="20" y="65" width="80" height="30"/>
+                                                            <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="30" id="HnS-2I-loa"/>
+                                                                <constraint firstAttribute="width" constant="80" id="Ir5-aI-m4r"/>
+                                                            </constraints>
+                                                            <state key="normal" title="إلغاء" image="x-20">
+                                                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            </state>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                    <integer key="value" value="5"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                            </userDefinedRuntimeAttributes>
+                                                            <connections>
+                                                                <action selector="cancelAppointment:" destination="yer-Oy-2l1" eventType="touchUpInside" id="Zp4-mP-tDg"/>
+                                                            </connections>
+                                                        </button>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstItem="KHP-ME-aFW" firstAttribute="top" secondItem="Nu5-DI-gjg" secondAttribute="top" constant="20" id="0lj-8g-TAA"/>
+                                                        <constraint firstItem="wx2-P1-o8f" firstAttribute="leading" secondItem="Nu5-DI-gjg" secondAttribute="leading" constant="20" id="25s-bu-fSm"/>
+                                                        <constraint firstAttribute="height" constant="120" id="8fM-4X-wEJ"/>
+                                                        <constraint firstItem="ysR-fi-HSi" firstAttribute="leading" secondItem="wx2-P1-o8f" secondAttribute="trailing" constant="20" id="LHP-BJ-J8v"/>
+                                                        <constraint firstItem="co6-tY-Lna" firstAttribute="top" secondItem="ysR-fi-HSi" secondAttribute="bottom" constant="10" id="TLO-q7-toC"/>
+                                                        <constraint firstItem="wx2-P1-o8f" firstAttribute="top" secondItem="ysR-fi-HSi" secondAttribute="top" id="WM7-Vt-tf8"/>
+                                                        <constraint firstAttribute="trailing" secondItem="KHP-ME-aFW" secondAttribute="trailing" constant="20" id="X7X-7z-PBx"/>
+                                                        <constraint firstItem="co6-tY-Lna" firstAttribute="trailing" secondItem="ysR-fi-HSi" secondAttribute="trailing" id="YxJ-Kk-UbK"/>
+                                                        <constraint firstItem="wK6-jg-im0" firstAttribute="top" secondItem="wx2-P1-o8f" secondAttribute="bottom" constant="10" id="aZM-Ao-L3F"/>
+                                                        <constraint firstItem="wK6-jg-im0" firstAttribute="leading" secondItem="Nu5-DI-gjg" secondAttribute="leading" constant="20" id="foQ-Ag-HBW"/>
+                                                        <constraint firstAttribute="width" constant="327" id="jp7-yR-9S2"/>
+                                                        <constraint firstItem="ysR-fi-HSi" firstAttribute="top" secondItem="Nu5-DI-gjg" secondAttribute="top" constant="25" id="sum-nb-i0L"/>
+                                                        <constraint firstItem="KHP-ME-aFW" firstAttribute="leading" secondItem="ysR-fi-HSi" secondAttribute="trailing" constant="20" id="ye4-tY-rlM"/>
+                                                    </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <integer key="value" value="10"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstItem="Nu5-DI-gjg" firstAttribute="top" secondItem="naM-Ug-ITw" secondAttribute="top" constant="10" id="Cwl-qH-y0b"/>
+                                                <constraint firstAttribute="trailing" secondItem="Nu5-DI-gjg" secondAttribute="trailing" constant="20" id="QFC-Ru-tsp"/>
+                                                <constraint firstAttribute="bottom" secondItem="Nu5-DI-gjg" secondAttribute="bottom" constant="10" id="a1N-dW-3BL"/>
+                                                <constraint firstItem="Nu5-DI-gjg" firstAttribute="leading" secondItem="naM-Ug-ITw" secondAttribute="leading" constant="20" id="qDn-K7-ehn"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <connections>
+                                            <outlet property="appointmentInfo" destination="ysR-fi-HSi" id="uTw-fu-IX9"/>
+                                            <outlet property="appointmentTime" destination="co6-tY-Lna" id="rqx-JS-5vc"/>
+                                            <outlet property="storeLogo" destination="KHP-ME-aFW" id="Ob4-go-hck"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="Lha-PN-EVL" id="S4l-rd-Usb"/>
+                                    <outlet property="delegate" destination="Lha-PN-EVL" id="eeT-oO-LjS"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.92941176469999998" green="0.92941176469999998" blue="0.92941176469999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="cCc-wv-oK0" firstAttribute="trailing" secondItem="18X-9g-k5G" secondAttribute="trailing" id="8Fm-rs-Vna"/>
+                            <constraint firstItem="zxC-dr-HpU" firstAttribute="leading" secondItem="cCc-wv-oK0" secondAttribute="leading" id="K0X-2u-GFw"/>
+                            <constraint firstItem="18X-9g-k5G" firstAttribute="leading" secondItem="cCc-wv-oK0" secondAttribute="leading" id="Pml-aV-Ajz"/>
+                            <constraint firstItem="zxC-dr-HpU" firstAttribute="top" secondItem="MpO-fQ-eDF" secondAttribute="top" id="QCH-eH-vb3"/>
+                            <constraint firstItem="cCc-wv-oK0" firstAttribute="bottom" secondItem="18X-9g-k5G" secondAttribute="bottom" id="abq-rc-1cZ"/>
+                            <constraint firstItem="18X-9g-k5G" firstAttribute="top" secondItem="zxC-dr-HpU" secondAttribute="bottom" constant="10" id="bfO-HA-zpU"/>
+                            <constraint firstItem="cCc-wv-oK0" firstAttribute="trailing" secondItem="zxC-dr-HpU" secondAttribute="trailing" id="gRt-Xy-hOf"/>
+                            <constraint firstItem="wBa-Ll-rux" firstAttribute="top" secondItem="zxC-dr-HpU" secondAttribute="bottom" constant="-40" id="hci-JS-QVr"/>
+                            <constraint firstItem="wBa-Ll-rux" firstAttribute="leading" secondItem="cCc-wv-oK0" secondAttribute="leading" constant="20" id="kmQ-Cx-ORO"/>
+                            <constraint firstItem="wBa-Ll-rux" firstAttribute="bottom" secondItem="zxC-dr-HpU" secondAttribute="bottom" id="wIB-GM-xNc"/>
+                            <constraint firstItem="cCc-wv-oK0" firstAttribute="trailing" secondItem="wBa-Ll-rux" secondAttribute="trailing" constant="20" id="xJw-cH-mEy"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="cCc-wv-oK0"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="حجوزاتي" image="calendar" catalog="system" id="qhS-Te-u5P"/>
+                    <navigationItem key="navigationItem" id="WhM-k3-0SD"/>
+                    <connections>
+                        <outlet property="tableView" destination="18X-9g-k5G" id="eoU-Ap-Oxa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hhw-67-e6s" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2348" y="2371"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="barcode-32" width="32" height="32"/>
+        <image name="calendar" catalog="system" width="128" height="106"/>
+        <image name="cart.fill" catalog="system" width="128" height="102"/>
+        <image name="edit-20" width="20" height="20"/>
+        <image name="mail" width="1000" height="1000"/>
+        <image name="mail 2" width="370" height="370"/>
+        <image name="mail 4" width="1000" height="1000"/>
+        <image name="person.fill" catalog="system" width="128" height="120"/>
+        <image name="reg-20" width="20" height="20"/>
+        <image name="statics-32 (1)" width="32" height="32"/>
+        <image name="store-32" width="32" height="32"/>
+        <image name="tray.fill" catalog="system" width="128" height="88"/>
+        <image name="x-20" width="20" height="20"/>
+        <namedColor name="AppColor">
+            <color red="0.33300000429153442" green="0.32199999690055847" blue="0.45100000500679016" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
