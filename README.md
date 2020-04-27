@@ -16,9 +16,9 @@ https://twitter.com/SAFCSP
 
 # صاحب المتجر
 <p align="left">
-  <img width="500" height="900" src="https://github.com/Muneera-Salah/homathon/blob/master/screenshot/IMG-5897.PNG">
-    <img width="500" height="900" src="https://github.com/Muneera-Salah/homathon/blob/master/screenshot/IMG-5903.PNG">
-    <img width="500" height="900" src="https://github.com/Muneera-Salah/homathon/blob/master/screenshot/IMG-5904.PNG">
-     <img width="500" height="900" src="https://github.com/Muneera-Salah/homathon/blob/master/screenshot/IMG-5905.PNG">
-     <img width="500" height="900" src="https://github.com/Muneera-Salah/homathon/blob/master/screenshot/IMG-5906.PNG">
+  <img width="450" height="900" src="https://github.com/Muneera-Salah/homathon/blob/master/screenshot/IMG-5897.PNG">
+    <img width="450" height="900" src="https://github.com/Muneera-Salah/homathon/blob/master/screenshot/IMG-5903.PNG">
+    <img width="450" height="900" src="https://github.com/Muneera-Salah/homathon/blob/master/screenshot/IMG-5904.PNG">
+     <img width="450" height="900" src="https://github.com/Muneera-Salah/homathon/blob/master/screenshot/IMG-5905.PNG">
+     <img width="450" height="900" src="https://github.com/Muneera-Salah/homathon/blob/master/screenshot/IMG-5906.PNG">
 </p>
